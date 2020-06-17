@@ -1,12 +1,14 @@
-***Задание***
+**Задание**
 
 Взять стенд https://github.com/erlong15/vagrant-bind, добавить еще один сервер client2.
 
 Завести в зоне dns.lab имена:
-web1 - смотрит на клиент1
+
+web1 - смотрит на клиент1;
 web2 - смотрит на клиент2
 
 Завести еще одну зону newdns.lab, завести в ней запись:
+
 www - смотрит на обоих клиентов
 
 Настроить split-dns:
@@ -104,6 +106,14 @@ Max kernel policy version:      31
 192.168.50.201
 ```
 Видим, что зона `ddns.lab` обновилась, информация о ней доступна как на мастере, так на слэйве.
+
+
+* ***Материалы, которые помогли при выполнении:***
+ * https://kb.isc.org/docs/aa-00851
+ * https://kb.isc.org/docs/aa-00296
+ * https://kb.isc.org/docs/aa-00608
+ * http://sudouser.com/nastrojka-dynamic-dns-na-baze-bind9-i-nsupdate.html
+ * https://andreyex.ru/linux/komandy-linux-i-komandy-shell/kak-ispolzovat-komandu-dig-dlya-zaprosa-dns-v-linux/
 
 
 
